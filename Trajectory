@@ -35,8 +35,8 @@ df_rand.norm_cog=norm_cog;
 % Vector is defined by terminal - initial. Initial is the random. 
 vectorori=zeros(length(a_loop),3);
 for v = 1:length(a_loop)
-    final = df_rand.dfcog(v,:);
-    initial = df_rand.dfrancog(v,:);
+    final = df_rand.dfori(v,:);
+    initial = df_rand.dfranori(v,:);
     vector = final - initial;
     x = vector(1);
     y = vector(2);
